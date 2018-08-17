@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace OeCheckDevices
 {
-    partial class AboutBox1 : Form
+    partial class About : Form
     {
-        public AboutBox1()
+        public About()
         {
             InitializeComponent();
             this.Text = String.Format("About {0}", AssemblyTitle);
@@ -102,9 +102,9 @@ namespace OeCheckDevices
         }
         #endregion
 
-        private void labelProductName_Click(object sender, EventArgs e)
+        private void okButton_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
